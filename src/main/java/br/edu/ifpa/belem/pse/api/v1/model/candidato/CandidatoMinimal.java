@@ -1,0 +1,20 @@
+package br.edu.ifpa.belem.pse.api.v1.model.candidato;
+
+import br.edu.ifpa.belem.pse.domain.model.Endereco;
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.hateoas.RepresentationModel;
+import org.springframework.hateoas.server.core.Relation;
+
+import java.util.UUID;
+
+@Relation(collectionRelation = "candidatos")
+@Getter
+@Setter
+public class CandidatoMinimal extends RepresentationModel<CandidatoMinimal> {
+
+    private Long id;
+    private String nome;
+
+
+}
